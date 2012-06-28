@@ -1,6 +1,8 @@
 SchAtts::Application.routes.draw do
   
 
+  resources :photos
+
   resources :boards do
 		resources :posts
 	end
