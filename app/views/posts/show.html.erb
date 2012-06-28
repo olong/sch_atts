@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>ID:</b>
+  <%= @post.theid %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @post.description %>
+</p>
+
+
+
+<p>
+  <b>Board_id:</b>
+  <%= @post.board_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_board_post_path(@board,@post) %> |
+<%= link_to 'Back', board_posts_path(@board) %>
